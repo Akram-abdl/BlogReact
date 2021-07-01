@@ -28,7 +28,7 @@ const AuthorList = ({ match }) => {
     <div>
       <PostList />
 
-      <div className="content">
+      <div>
         <Author author={author} />
       </div>
     </div>

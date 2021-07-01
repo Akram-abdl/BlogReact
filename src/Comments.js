@@ -20,9 +20,12 @@ const Comments = ({ post }) => {
 
   return (
     <div>
-        <ul>
+        
+        <ul className="list-group list-group-flush">
         {comments.map(comment => (
-            <li className="comments" key={comment.id}>{comment.body}</li>
+            <li className="list-group-item" key={comment.id}>
+              {comment.body}
+            </li>
         ))}
         </ul>
     </div>
